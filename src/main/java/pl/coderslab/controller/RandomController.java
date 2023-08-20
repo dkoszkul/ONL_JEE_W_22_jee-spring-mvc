@@ -21,7 +21,7 @@ public class RandomController {
 
     @GetMapping("{min}/{max}")
     @ResponseBody
-    public String getMaxRandom(@PathVariable("min") int min,
+    public String getMinAndMaxRandom(@PathVariable("min") int min,
                                @PathVariable("max") int max) {
         int result = new Random().nextInt(max - min) + min;
         return "Wylosowana liczba: " + result;
