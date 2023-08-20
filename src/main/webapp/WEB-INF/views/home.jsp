@@ -9,6 +9,13 @@
 <html>
 <head>
     <title>Home</title>
+
+    <style>
+        body {
+            color: ${fontColor};
+            background-color: ${backgroundColor};
+        }
+    </style>
 </head>
 <body>
     <h1>Witaj w widoku</h1>
