@@ -18,4 +18,12 @@ public class RandomController {
         int result = new Random().nextInt(max) + 1;
         return "Wylosowana liczba: " + result;
     }
+
+    @GetMapping("{min}/{max}")
+    @ResponseBody
+    public String getMaxRandom(@PathVariable("min") int min,
+                               @PathVariable("max") int max) {
+        int result = new Random().nextInt(max - min) + min;
+        return "Wylosowana liczba: " + result;
+    }
 }
