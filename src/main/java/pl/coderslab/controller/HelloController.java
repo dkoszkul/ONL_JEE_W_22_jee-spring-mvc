@@ -12,4 +12,9 @@ public class HelloController {
     public String helloWorld() {
         return "Hello World & CodersLab!";
     }
+
+    @GetMapping("helloView")
+    public String helloView() {
+        return "home";
+    }
 }
